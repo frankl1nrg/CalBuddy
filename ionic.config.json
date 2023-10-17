@@ -1,0 +1,7 @@
+{
+  "name": "CalBuddy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
