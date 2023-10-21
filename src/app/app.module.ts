@@ -7,6 +7,10 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { Amplify, Auth } from 'aws-amplify';
+import awsconfig from '../aws-exports';
+Amplify.configure(awsconfig);
+
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
