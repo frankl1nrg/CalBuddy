@@ -31,7 +31,11 @@
                 "output": "assets"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
+            "styles": [
+              "src/theme/variables.scss", 
+              "src/global.scss",
+              "node_modules/@aws-amplify/ui-angular/theme.css"
+            ],
             "scripts": []
           },
           "configurations": {

@@ -1,0 +1,76 @@
+/CALBUDDY/
+|-- .git/                  (Git configuration and source directory)
+|-- amplify/               (AWS Amplify's configuration and source directory)
+|-- node_modules/          (All the modules required for the app)
+|-- src/
+|   |-- assets/            (Static assets: images, fonts, etc.)
+|   |   |-- img/
+|   |   |-- fonts/
+|   |-- app/               (Main source code directory)
+|   |   |-- components/    (Reusable standalone components)
+|   |   |   |-- button/
+|   |   |   |   |-- button.component.ts
+|   |   |   |   |-- button.module.ts
+|   |   |   |-- icon/
+|   |   |   |   |-- icon.component.ts
+|   |   |   |   |-- icon.module.ts
+|   |   |   |-- ...
+|   |   |-- views/         (All app views - Standalone views/pages)
+|   |   |   |-- initial/
+|   |   |   |   |-- initial.page.html
+|   |   |   |   |-- initial.page.scss
+|   |   |   |   |-- initial.page.ts
+|   |   |   |-- sign-in/
+|   |   |   |   |-- sign-in.page.html
+|   |   |   |   |-- sign-in.page.scss
+|   |   |   |   |-- sign-in.page.ts
+|   |   |   |-- events-today-tab/
+|   |   |   |-- create-event-tab/
+|   |   |   |-- calendar-view-tab/
+|   |   |   |-- ...
+|   |   |-- services/      (Services including API calls, data services, etc.)
+|   |   |-- models/        (Data models)
+|   |   |-- helpers/       (Utility functions and constants)
+|   |   |-- state/         (State management)
+|   |   |-- app.routes.ts           (Angular's routing module)
+|   |   |-- app.component.ts        (Main application component)
+|-- angular.json           (Angular CLI's configuration file)
+|-- package.json           (Project metadata and dependencies)
+|-- README.md              (Your repository's readme file)
+|-- .gitignore             (Specifies which files/dirs Git should ignore)
+|-- ...                    (Other configuration files: tsconfig.json, etc.)
+
+
+
+#### ADDITIONAL COMMENTS 
+Let's go over each of the files in the parent folder, what they are used for, and what you might want to do with them based on the proposed repository's structure:
+
+1. **.browserslistrc**: 
+    - **Purpose**: This file is used to describe which browsers your app needs to support. Tools like Autoprefixer and Babel use this to tailor CSS and JavaScript respectively, to only include the necessary polyfills and prefixes.
+    - **Action**: Keep this file. It's crucial for ensuring browser compatibility.
+
+2. **.editorconfig**:
+    - **Purpose**: This file defines coding styles for different editors and IDEs. It ensures that your code looks the same regardless of who's writing it or in what editor.
+    - **Action**: Keep this file, especially if multiple people work on the project to ensure consistent coding styles.
+
+3. **.eslintrc.json**:
+    - **Purpose**: Configuration file for ESLint, a tool that identifies and reports on patterns in JavaScript. Helps maintain a consistent coding style.
+    - **Action**: Keep this file. If you decide to use ESLint for linting your TypeScript/JavaScript code, it will be essential.
+
+4. **capacitor.config.ts**:
+    - **Purpose**: Configuration for Capacitor, a cross-platform app runtime that helps to build web apps that run natively on iOS, Android, Electron, and the web.
+    - **Action**: Keep this file. Since you've initialized the app with Capacitor, it's important for native builds and platform-specific configurations.
+
+5. **ionic.config.json**:
+    - **Purpose**: This file contains settings specific to Ionic projects, such as the type of the project, integrations, and more.
+    - **Action**: Keep this file. It's required for your Ionic project to function correctly.
+
+7. **tsconfig.app.json**:
+    - **Purpose**: TypeScript compiler configuration specifically for the app code.
+    - **Action**: Keep this file. It's required for TypeScript compilation of your application.
+
+8. **tsconfig.json**:
+    - **Purpose**: Base TypeScript configuration file for your project.
+    - **Action**: Keep this file. It provides the essential TypeScript settings for your project.
+
+**In summary**, all of the files you listed have important roles in the development, testing, and building processes of your Angular/Ionic project. It's advisable to keep most (if not all) of them, especially if you're aiming for best practices and a comprehensive development workflow.
