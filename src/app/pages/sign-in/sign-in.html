@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>CalendarOne</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <ion-button expand="block" color="primary" (click)="signInWithGoogle()">Continue with Google</ion-button>
+        <ion-button expand="block" color="primary" (click)="signInWithApple()">Continue with Apple</ion-button>
+  
+        <div>Or</div>
+  
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input [(ngModel)]="email"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+  
+        <ion-button expand="block" (click)="signIn(email, password)">Continue Sign Up</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>  
+  <!-- <amplify-authenticator>
+    <ng-template
+      amplifySlot="authenticated"
+      let-user="user"
+      let-signOut="signOut"
+    >
+      <h1>Welcome {{ user.username }}!</h1>
+      <button (click)="signOut()">Sign Out</button>
+    </ng-template>
+  </amplify-authenticator> -->
