@@ -3,8 +3,8 @@ import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/stan
 
 @Component({
   selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss'],
+  templateUrl: 'create-event-tab.page.html',
+  styleUrls: ['create-event-tab.page.scss'],
   standalone: true,
   imports: [IonHeader, IonToolbar, IonTitle, IonContent]
 })

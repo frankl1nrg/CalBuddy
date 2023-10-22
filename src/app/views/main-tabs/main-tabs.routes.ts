@@ -1,25 +1,25 @@
 import { Routes } from '@angular/router';
-import { TabsPage } from './tabs.page';
+import { TabsPage } from './main-tabs.page';
 
 export const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
         path: 'tab1',
         loadComponent: () =>
-          import('../tab1/tab1.page').then((m) => m.Tab1Page),
+          import('../events-today-tab/events-today-tab.page').then((m) => m.Tab1Page),
       },
       {
         path: 'tab2',
         loadComponent: () =>
-          import('../tab2/tab2.page').then((m) => m.Tab2Page),
+          import('../create-event-tab/create-event-tab.page').then((m) => m.Tab2Page),
       },
       {
         path: 'tab3',
         loadComponent: () =>
-          import('../tab3/tab3.page').then((m) => m.Tab3Page),
+          import('../calendar-view-tab/calendar-view-tab.page').then((m) => m.Tab3Page),
       },
       {
         path: '',
