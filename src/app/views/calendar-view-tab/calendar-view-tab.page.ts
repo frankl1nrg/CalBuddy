@@ -3,8 +3,8 @@ import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/stan
 
 @Component({
   selector: 'app-tab3',
-  templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss'],
+  templateUrl: 'calendar-view-tab.page.html',
+  styleUrls: ['calendar-view-tab.page.scss'],
   standalone: true,
   imports: [IonHeader, IonToolbar, IonTitle, IonContent],
 })
