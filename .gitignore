@@ -88,3 +88,8 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+
+# Capacitor files
+android
+ios
+# Capacitor files
