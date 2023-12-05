@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
-
 import { Auth, Amplify } from 'aws-amplify';
 import { Hub, HubCapsule } from '@aws-amplify/core';
 import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
@@ -22,11 +21,20 @@ export class LogInPage implements OnInit {
           this.handleSignIn();
         }
       });
+      this.handleSignIn();
     }
     toWelcomePage () {
       this.router.navigate(['/welcome']);
     }
-    handleSignIn() {
-      this.router.navigate(['/tabs']); // Change '/home' to your desired route
+    async handleSignIn() {
+      try {
+        const user = await Auth.currentAuthenticatedUser();
+        if (user) {
+          this.router.navigate(['/tabs']); // Change '/tabs' to your desired route
+        }
+      } catch (error) {
+        console.error('Error getting authenticated user: ', error);
+        // Handle unauthenticated user scenario
+      }
     }
 }
