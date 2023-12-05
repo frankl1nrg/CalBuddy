@@ -13,23 +13,25 @@ import { APIService } from 'src/app/services/API.service';
   standalone: true,
   imports: [RouterModule,IonGrid,IonCol,IonRow,IonHeader, IonToolbar, IonTitle, IonContent,IonRouterOutlet,ActivityCardComponent, MonthViewComponent, ChangeViewChipsComponent, IonDatetime],
 })
-export class Tab3Page implements OnInit{
-  constructor(private apiService: APIService) {}
+export class Tab3Page {
+  // constructor(private apiService: APIService) {}
   
-  ngOnInit(): void {
-    this.getAcademicEvents();
-  }
+//   ngOnInit(): void {
+//     this.getAcademicEvents();
+//   }
 
-  async getAcademicEvents() {
-  try {
-    const response = await this.apiService.ListAcademicEvents();
-    console.log(response);
-    // Process response here
-  } catch (error) {
-    console.error(error);
-    // Handle error here
-  }
-}
 
+//   events:any=[]
+
+//   async getAcademicEvents() {
+//   try {
+//     const response_academic = await this.apiService.ListAcademicEvents();
+//     console.log(this.events= response_academic.items);
+//     // Process response here
+//   } catch (error) {
+//     console.error(error);
+//     // Handle error here
+//   }
+// }
 
 }

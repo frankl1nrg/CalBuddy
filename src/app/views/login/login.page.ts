@@ -4,11 +4,7 @@ import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/stan
 import { Auth, Amplify } from 'aws-amplify';
 import { Hub, HubCapsule } from '@aws-amplify/core';
 import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
-
-import awsconfig from 'src/aws-exports';
 import { Router } from '@angular/router';
-
-Amplify.configure(awsconfig);
 
 @Component({
   templateUrl: 'login.page.html',
