@@ -18,8 +18,14 @@ export const routes: Routes = [
       },
       {
         path: 'tab3',
-        loadComponent: () =>
-          import('../calendar-view-tab/calendar-view-tab.page').then((m) => m.Tab3Page),
+        children:
+        [
+          {
+          path:'',
+          loadChildren: () =>
+            import('../calendar-view-tab/calendar-view-router-routing.routes').then((m) => m.CalendarViewRouterModule),
+          }
+        ]
       },
       {
         path: '',

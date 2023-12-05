@@ -14,5 +14,9 @@ export const routes: Routes = [
     path: 'tabs',
     loadChildren: () => import('./views/main-tabs/main-tabs.routes').then(m => m.routes)
     // canActivate: [AuthGuard] // Use this if you have an AuthGuard implemented
-  }
+  },
+  {
+    path: '**',
+    redirectTo: 'tabs', // Redirects to login by default
+  },
 ];
