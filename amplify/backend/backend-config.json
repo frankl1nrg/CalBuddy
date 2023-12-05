@@ -23,7 +23,7 @@
     }
   },
   "auth": {
-    "calbuddy19c026db": {
+    "CalBuddy": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -36,7 +36,8 @@
           "passwordPolicyMinLength": 8
         },
         "signupAttributes": [
-          "EMAIL"
+          "NAME",
+          "FAMILY_NAME"
         ],
         "socialProviders": [],
         "usernameAttributes": [
@@ -50,6 +51,7 @@
       "service": "Cognito"
     }
   },
+  "function": {},
   "hosting": {
     "amplifyhosting": {
       "lastPushTimeStamp": "2023-10-21T21:14:38.266Z",

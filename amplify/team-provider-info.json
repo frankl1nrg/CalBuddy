@@ -18,8 +18,11 @@
           "type": "cicd"
         }
       },
+      "api": {
+        "CalBuddy": {}
+      },
       "auth": {
-        "calbuddy19c026db": {}
+        "CalBuddy": {}
       }
     }
   }
