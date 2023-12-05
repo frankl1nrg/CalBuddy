@@ -1,16 +1,71 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<div class="ion-page" id="event" style="background: white !important;">
+
+  <ion-content class="ion-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h3>New Event</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <!-- created component to design. We  can use ion one directly if needed  -->
+          <app-input-field [placeholder]="inputTtitle"></app-input-field>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-margin-bottom">
+        <ion-col>
+          <!-- input field component-->
+          <!-- passing variable value to placeholder -->
+          <app-input-field [placeholder]="locationInput"></app-input-field>
+        </ion-col>
+      </ion-row>
+      <div class="mb-20">
+        <ion-row>
+          <ion-col size="10">
+            <label>All day event</label>
+          </ion-col>
+          <ion-col class="ion-text-right" size="2">
+            <!-- changing variable value -->
+            <ion-toggle justify="end" [(ngModel)]="allDayEventToggle"></ion-toggle>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <app-all-day-event *ngIf="allDayEventToggle"></app-all-day-event>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="10">
+            <label>Repeat Event</label>
+          </ion-col>
+          <ion-col class="ion-text-right" size="2">
+            <ion-toggle justify="end" [(ngModel)]="repetitiveEventToggle"></ion-toggle>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <app-repetative-event *ngIf="repetitiveEventToggle"></app-repetative-event>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><h4>Tags:</h4></ion-col>
+          <!-- created tags component. check tag-button componenet -->
+          <app-tag-buttons></app-tag-buttons>
+        </ion-row>
+      </div>
+      <ion-row>
+        <ion-col>
+          <h4>Notes:</h4>
+          <ion-textarea class="custom-textarea"
+            placeholder="Enter your notes here"></ion-textarea>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  <ion-footer>
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
-  </ion-header>
-
-</ion-content>
+  </ion-footer>
+</div>

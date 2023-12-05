@@ -1,0 +1,15 @@
+<ion-row>
+  <ion-button (click)="toggleSelection('M')"
+    [color]="isSelected('M') ? 'primary' : 'default'" class="round-button">M</ion-button>
+  <ion-button (click)="toggleSelection('T')"
+    [color]="isSelected('T') ? 'primary' : 'default'" class="round-button">T</ion-button>
+  <ion-button (click)="toggleSelection('W')"
+    [color]="isSelected('W') ? 'primary' : 'default'" class="round-button">W</ion-button>
+  <ion-button (click)="toggleSelection('F')"
+    [color]="isSelected('F') ? 'primary' : 'default'" class="round-button">F</ion-button>
+  <ion-button (click)="toggleSelection('S')"
+    [color]="isSelected('S') ? 'primary' : 'default'" class="round-button">S</ion-button>
+  <ion-button (click)="toggleSelection('Sn')"
+    [color]="isSelected('Sn') ? 'primary' : 'default'" class="round-button">S</ion-button>
+  <!-- More buttons could be added -->
+</ion-row>

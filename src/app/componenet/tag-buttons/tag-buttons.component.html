@@ -1,0 +1,11 @@
+<ion-row class="tags-parent">
+  <ion-col size="12" class="justify-content-between tags-button ">
+    <!-- used for loop for each item in array. can be changed to dynamic data -->
+    <ion-button *ngFor="let item of items; let i = index"
+      [ngStyle]="{'--background': tagColors[i]}" size="small"
+      shape="round">
+      {{ item }}
+      <!-- prints each value -->
+    </ion-button>
+  </ion-col>
+</ion-row>
