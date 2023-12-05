@@ -1,0 +1,51 @@
+
+    <ion-list lines="inset">
+
+        <ion-item *ngFor="let singleDay of activitiesPerDay">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="3">
+                <span class="dot">
+                  <div class="dateContainer">
+                    <h1 class="dateMonth">{{singleDay.day}}</h1>
+                    <p class="dateDay">{{singleDay.month}}</p>
+                  </div>
+                </span>
+                
+              </ion-col>
+              <ion-col size="9">
+                <div *ngFor="let activities of singleDay.activities" style="padding-bottom: 15px;">
+                  <ion-label >{{activities.timeStart}} - {{activities.timeStart}}pm</ion-label>
+                  <h3>{{activities.name}}</h3>
+                  <ion-chip [ngClass]="styleDeppendingOnTag(tag)" *ngFor="let tag of activities.tags">{{tag}}</ion-chip>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item> 
+  
+      </ion-list>
+  
+
+
+
+    
+     
+
+
+
+    
+
+
+
+
+
+    <!-- <b>Column 2 has <code>size</code> set to <code>"auto"</code> and a defined width</b>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3">1</ion-col>
+        <ion-col size="auto">
+          <div>2</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->

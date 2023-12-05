@@ -1,0 +1,68 @@
+.dot {
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .dateContainer{
+    position: absolute;
+
+    padding-left: 15px;
+  }
+
+    h3{
+        margin: 2px;
+    }
+
+.pinkBadge {
+    --background: #ffb6c1;
+    --color: #000000;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+
+.greyBadge {
+    --background: #D3D3D3;
+    --color: #000000;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+  
+  .blueBadge {
+    --background: #ADD8E6;
+    --color: #000000;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .greenBadge {
+    --background: #90EE90;
+    --color: #000000;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+  
+
+  .yellowBadge{
+    --background: #ffffac;
+    --color: #000000;
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+    
+
+  .dateMonth{   
+    margin-top: 3px;
+    margin-bottom: 0px;
+    color: black; 
+  }
+
+  .dateDay{
+    margin-top: 0px;
+    color: black; 
+  }
