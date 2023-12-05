@@ -1,13 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
 
-import { Amplify } from 'aws-amplify';
+import { Auth, Amplify } from 'aws-amplify';
+import { Hub, HubCapsule } from '@aws-amplify/core';
 import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
-
-import awsconfig from 'src/aws-exports';
 import { Router } from '@angular/router';
-
-Amplify.configure(awsconfig);
 
 @Component({
   templateUrl: 'login.page.html',
@@ -15,11 +12,21 @@ Amplify.configure(awsconfig);
   standalone: true,
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, AmplifyAuthenticatorModule],
 })
-export class LogInPage {
-  
+export class LogInPage implements OnInit {
   constructor(private router: Router) {}
 
-    toWelcomePage(){
-        this.router.navigateByUrl('welcome')
+    ngOnInit() {
+      Hub.listen('auth', (data: HubCapsule) => {
+        const { channel, payload } = data;
+        if (channel === 'auth' && (payload.event === 'signIn' || payload.event === 'signUp')){
+          this.handleSignIn();
+        }
+      });
+    }
+    toWelcomePage () {
+      this.router.navigate(['/welcome']);
+    }
+    handleSignIn() {
+      this.router.navigate(['/tabs']); // Change '/home' to your desired route
     }
 }
