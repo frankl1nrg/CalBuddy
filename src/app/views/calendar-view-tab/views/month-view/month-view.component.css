@@ -1,0 +1,29 @@
+
+ion-datetime::part(calendar-day) {
+    color: #ffffff;
+  }
+  
+  ion-datetime::part(today) {
+    color: #6ba1c4;
+  }
+  
+  ion-datetime::part(calendar-day):focus {
+    background-color: rgb(154 209 98 / 0.2);
+    box-shadow: 0px 0px 0px 4px rgb(154 209 98 / 0.2);
+  }
+
+
+  ion-datetime::part(month-year-button){
+    color: #ffffff
+  }
+  
+ion-datetime {
+    --background: #2a2a2a;
+    --background-rgb: 42, 42, 42;
+  
+    border-radius: 16px;
+    box-shadow: rgba(var(--ion-color-rose-rgb), 0.3) 0px 10px 15px -3px;
+  }
+
+
+  

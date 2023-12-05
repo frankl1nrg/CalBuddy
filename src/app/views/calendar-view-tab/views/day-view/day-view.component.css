@@ -1,0 +1,66 @@
+
+hr{
+
+  background-color: white;
+  margin-top: 11px;
+}
+
+.line-container {
+position: relative;
+}
+
+.overlay-line {
+position: absolute;
+top: 0;
+left: 0;
+animation: moveDown 5s linear forwards;
+}
+
+.dot {
+height: 8px;
+width: 8px;
+background-color: red;
+border-radius: 50%;
+display: inline-block;
+}
+
+.line {
+border: 1px solid red;
+background-color: red;
+width: 250px;
+top: 1px;
+position: absolute;
+z-index: 950;
+}
+
+@keyframes moveDown {
+0% {
+  top: 0;
+}
+100% {
+  top: calc(100% - 15px); /* Adjust based on the size of the dot */
+}
+}
+
+
+ion-card{
+  margin-top: 5px;
+  margin-inline: 0px;
+  z-index: 900;
+}
+
+ion-icon{
+  z-index: 960;
+}
+
+
+
+
+
+
+
+
+
+  
+
+

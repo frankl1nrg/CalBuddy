@@ -1,0 +1,24 @@
+<div *ngFor="let day of filteredActivities">
+  <ion-card *ngFor="let activity of day.activities">
+    <ion-card-header>
+      <ion-card-title>{{activity.name}}</ion-card-title>
+      <ion-card-subtitle>{{activity.timeStart}} - {{activity.timeEnd}}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+</div>
+
+<div *ngIf="!filteredActivities || filteredActivities.length === 0">
+  <p>No activities available for this date.</p>
+</div>
+<!-- 
+<div *ngFor="let day of activitiesPerDay">
+    <h2>{{ day.month }} {{ day.day }}</h2>
+    <div *ngFor="let activity of day.activities">
+      <div class="card">
+        <h3>{{ activity.name }}</h3>
+        <p>Start Time: {{ activity.timeStart }}</p>
+        <p>End Time: {{ activity.timeEnd }}</p>
+        <p>Tags: {{ activity.tags.join(', ') }}</p>
+      </div>
+    </div>
+  </div> -->
