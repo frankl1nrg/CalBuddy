@@ -1,0 +1,313 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateAcademicEvents(
+  $filter: ModelSubscriptionAcademicEventsFilterInput
+) {
+  onCreateAcademicEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateAcademicEvents(
+  $filter: ModelSubscriptionAcademicEventsFilterInput
+) {
+  onUpdateAcademicEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteAcademicEvents(
+  $filter: ModelSubscriptionAcademicEventsFilterInput
+) {
+  onDeleteAcademicEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnCreateAthleticEvents(
+  $filter: ModelSubscriptionAthleticEventsFilterInput
+) {
+  onCreateAthleticEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateAthleticEvents(
+  $filter: ModelSubscriptionAthleticEventsFilterInput
+) {
+  onUpdateAthleticEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteAthleticEvents(
+  $filter: ModelSubscriptionAthleticEventsFilterInput
+) {
+  onDeleteAthleticEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnCreateClubEvents(
+  $filter: ModelSubscriptionClubEventsFilterInput
+) {
+  onCreateClubEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateClubEvents(
+  $filter: ModelSubscriptionClubEventsFilterInput
+) {
+  onUpdateClubEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteClubEvents(
+  $filter: ModelSubscriptionClubEventsFilterInput
+) {
+  onDeleteClubEvents(filter: $filter) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnCreateTags($filter: ModelSubscriptionTagsFilterInput) {
+  onCreateTags(filter: $filter) {
+    id
+    name
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateTags($filter: ModelSubscriptionTagsFilterInput) {
+  onUpdateTags(filter: $filter) {
+    id
+    name
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteTags($filter: ModelSubscriptionTagsFilterInput) {
+  onDeleteTags(filter: $filter) {
+    id
+    name
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnCreatePersonalEvents(
+  $filter: ModelSubscriptionPersonalEventsFilterInput
+) {
+  onCreatePersonalEvents(filter: $filter) {
+    id
+    name
+    location
+    startDatetime
+    endDatetime
+    tags
+    description
+    Users {
+      id
+      school_email
+      personal_email
+      d2l_calendar_token
+      createdAt
+      updatedAt
+      __typename
+    }
+    status
+    createdAt
+    updatedAt
+    personalEventsUsersId
+    __typename
+  }
+}
+
+subscription OnUpdatePersonalEvents(
+  $filter: ModelSubscriptionPersonalEventsFilterInput
+) {
+  onUpdatePersonalEvents(filter: $filter) {
+    id
+    name
+    location
+    startDatetime
+    endDatetime
+    tags
+    description
+    Users {
+      id
+      school_email
+      personal_email
+      d2l_calendar_token
+      createdAt
+      updatedAt
+      __typename
+    }
+    status
+    createdAt
+    updatedAt
+    personalEventsUsersId
+    __typename
+  }
+}
+
+subscription OnDeletePersonalEvents(
+  $filter: ModelSubscriptionPersonalEventsFilterInput
+) {
+  onDeletePersonalEvents(filter: $filter) {
+    id
+    name
+    location
+    startDatetime
+    endDatetime
+    tags
+    description
+    Users {
+      id
+      school_email
+      personal_email
+      d2l_calendar_token
+      createdAt
+      updatedAt
+      __typename
+    }
+    status
+    createdAt
+    updatedAt
+    personalEventsUsersId
+    __typename
+  }
+}
+
+subscription OnCreateUsers($filter: ModelSubscriptionUsersFilterInput) {
+  onCreateUsers(filter: $filter) {
+    id
+    school_email
+    personal_email
+    d2l_calendar_token
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateUsers($filter: ModelSubscriptionUsersFilterInput) {
+  onUpdateUsers(filter: $filter) {
+    id
+    school_email
+    personal_email
+    d2l_calendar_token
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteUsers($filter: ModelSubscriptionUsersFilterInput) {
+  onDeleteUsers(filter: $filter) {
+    id
+    school_email
+    personal_email
+    d2l_calendar_token
+    createdAt
+    updatedAt
+    __typename
+  }
+}

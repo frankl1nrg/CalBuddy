@@ -55,7 +55,7 @@ activitiesPerDay = [
       {
       name:'Dentist',
       timeStart:'1:00',
-      timeEnd:'2:00pm',
+      timeEnd:'2:00',
       tags:['Personal','Health']
       },
       {

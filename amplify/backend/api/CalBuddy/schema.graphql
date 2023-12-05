@@ -1,7 +1,57 @@
+type AcademicEvents @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  tags: [String]
+  startDatetime: AWSDateTime
+  endDatetime: AWSDateTime
+  MonthYear: String
+  description: String
+  location: String
+}
+
+type AthleticEvents @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  tags: [String]
+  startDatetime: AWSDateTime
+  endDatetime: AWSDateTime
+  MonthYear: String
+  description: String
+  location: String
+}
+
+type ClubEvents @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  tags: [String]
+  startDatetime: AWSDateTime
+  endDatetime: AWSDateTime
+  MonthYear: String
+  description: String
+  location: String
+}
+
+type Tags @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}
+
+type PersonalEvents @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  location: String
+  startDatetime: String
+  endDatetime: String
+  tags: [String]
+  description: String
+  Users: Users @hasOne
+  status: String
+}
+
 type Users @model @auth(rules: [{allow: public}]) {
   id: ID!
-  cognito_id: String
   school_email: String
   personal_email: String
   d2l_calendar_token: String
 }
+ 

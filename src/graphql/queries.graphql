@@ -1,0 +1,228 @@
+# this is an auto generated file. This will be overwritten
+
+query GetAcademicEvents($id: ID!) {
+  getAcademicEvents(id: $id) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListAcademicEvents(
+  $filter: ModelAcademicEventsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAcademicEvents(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      tags
+      startDatetime
+      endDatetime
+      MonthYear
+      description
+      location
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetAthleticEvents($id: ID!) {
+  getAthleticEvents(id: $id) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListAthleticEvents(
+  $filter: ModelAthleticEventsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAthleticEvents(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      tags
+      startDatetime
+      endDatetime
+      MonthYear
+      description
+      location
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetClubEvents($id: ID!) {
+  getClubEvents(id: $id) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListClubEvents(
+  $filter: ModelClubEventsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listClubEvents(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      tags
+      startDatetime
+      endDatetime
+      MonthYear
+      description
+      location
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetTags($id: ID!) {
+  getTags(id: $id) {
+    id
+    name
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListTags($filter: ModelTagsFilterInput, $limit: Int, $nextToken: String) {
+  listTags(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetPersonalEvents($id: ID!) {
+  getPersonalEvents(id: $id) {
+    id
+    name
+    location
+    startDatetime
+    endDatetime
+    tags
+    description
+    Users {
+      id
+      school_email
+      personal_email
+      d2l_calendar_token
+      createdAt
+      updatedAt
+      __typename
+    }
+    status
+    createdAt
+    updatedAt
+    personalEventsUsersId
+    __typename
+  }
+}
+
+query ListPersonalEvents(
+  $filter: ModelPersonalEventsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPersonalEvents(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      location
+      startDatetime
+      endDatetime
+      tags
+      description
+      status
+      createdAt
+      updatedAt
+      personalEventsUsersId
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query GetUsers($id: ID!) {
+  getUsers(id: $id) {
+    id
+    school_email
+    personal_email
+    d2l_calendar_token
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListUsers(
+  $filter: ModelUsersFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      school_email
+      personal_email
+      d2l_calendar_token
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
