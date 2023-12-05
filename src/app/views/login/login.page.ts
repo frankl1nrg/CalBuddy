@@ -5,6 +5,7 @@ import { Amplify } from 'aws-amplify';
 import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
 
 import awsconfig from 'src/aws-exports';
+import { Router } from '@angular/router';
 
 Amplify.configure(awsconfig);
 
@@ -15,5 +16,10 @@ Amplify.configure(awsconfig);
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, AmplifyAuthenticatorModule],
 })
 export class LogInPage {
-  constructor() {}
+  
+  constructor(private router: Router) {}
+
+    toWelcomePage(){
+        this.router.navigateByUrl('welcome')
+    }
 }
