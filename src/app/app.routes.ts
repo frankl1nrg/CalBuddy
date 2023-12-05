@@ -23,4 +23,8 @@ export const routes: Routes = [
     path: '**',
     redirectTo: 'tabs', // Redirects to login by default
   },
+  {
+    path: 'new-event',
+    loadComponent: () => import('./views/create-event-tab/create-event-tab.page').then( m => m.Tab2Page)
+  },
 ];
