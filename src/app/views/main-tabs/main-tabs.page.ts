@@ -5,6 +5,7 @@ import { addIcons } from 'ionicons';
 import { triangle, ellipse, square } from 'ionicons/icons';
 import { SharedModule } from 'src/app/shared/shared.module';
 
+
 @Component({
   selector: 'app-tabs',
   templateUrl: 'main-tabs.page.html',
