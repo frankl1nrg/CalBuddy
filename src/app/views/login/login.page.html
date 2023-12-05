@@ -1,10 +1,6 @@
-<amplify-authenticator>
-  <ng-template
-    amplifySlot="authenticated"
-    let-user="user"
-    let-signOut="signOut"
-  >
-    <h2>Welcome, {{ user.username }}!</h2>
-    <button (click)="signOut()">Sign Out</button>
-  </ng-template>
-</amplify-authenticator>
+<div>
+  <h4 (click)="toWelcomePage()">Back</h4>
+  <h1 >CalBuddy</h1>
+  <amplify-authenticator></amplify-authenticator>
+  <h4 class="alignText">By continuing you accept terms and conditions</h4>
+</div>

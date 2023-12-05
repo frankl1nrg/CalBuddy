@@ -3,8 +3,12 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login', // Redirects to login by default
+    redirectTo: 'welcome', // Redirects to login by default
     pathMatch: 'full'
+  },
+  {
+    path:'welcome',
+    loadComponent:()=>import('./views/welcome/welcome.page').then((m)=> m.WelcomePage)
   },
   {
     path: 'login',

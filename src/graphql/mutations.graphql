@@ -1,0 +1,343 @@
+# this is an auto generated file. This will be overwritten
+
+mutation CreateAcademicEvents(
+  $input: CreateAcademicEventsInput!
+  $condition: ModelAcademicEventsConditionInput
+) {
+  createAcademicEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateAcademicEvents(
+  $input: UpdateAcademicEventsInput!
+  $condition: ModelAcademicEventsConditionInput
+) {
+  updateAcademicEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteAcademicEvents(
+  $input: DeleteAcademicEventsInput!
+  $condition: ModelAcademicEventsConditionInput
+) {
+  deleteAcademicEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation CreateAthleticEvents(
+  $input: CreateAthleticEventsInput!
+  $condition: ModelAthleticEventsConditionInput
+) {
+  createAthleticEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateAthleticEvents(
+  $input: UpdateAthleticEventsInput!
+  $condition: ModelAthleticEventsConditionInput
+) {
+  updateAthleticEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteAthleticEvents(
+  $input: DeleteAthleticEventsInput!
+  $condition: ModelAthleticEventsConditionInput
+) {
+  deleteAthleticEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation CreateClubEvents(
+  $input: CreateClubEventsInput!
+  $condition: ModelClubEventsConditionInput
+) {
+  createClubEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateClubEvents(
+  $input: UpdateClubEventsInput!
+  $condition: ModelClubEventsConditionInput
+) {
+  updateClubEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteClubEvents(
+  $input: DeleteClubEventsInput!
+  $condition: ModelClubEventsConditionInput
+) {
+  deleteClubEvents(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    startDatetime
+    endDatetime
+    MonthYear
+    description
+    location
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation CreateTags(
+  $input: CreateTagsInput!
+  $condition: ModelTagsConditionInput
+) {
+  createTags(input: $input, condition: $condition) {
+    id
+    name
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateTags(
+  $input: UpdateTagsInput!
+  $condition: ModelTagsConditionInput
+) {
+  updateTags(input: $input, condition: $condition) {
+    id
+    name
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteTags(
+  $input: DeleteTagsInput!
+  $condition: ModelTagsConditionInput
+) {
+  deleteTags(input: $input, condition: $condition) {
+    id
+    name
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation CreatePersonalEvents(
+  $input: CreatePersonalEventsInput!
+  $condition: ModelPersonalEventsConditionInput
+) {
+  createPersonalEvents(input: $input, condition: $condition) {
+    id
+    name
+    location
+    startDatetime
+    endDatetime
+    tags
+    description
+    Users {
+      id
+      school_email
+      personal_email
+      d2l_calendar_token
+      createdAt
+      updatedAt
+      __typename
+    }
+    status
+    createdAt
+    updatedAt
+    personalEventsUsersId
+    __typename
+  }
+}
+
+mutation UpdatePersonalEvents(
+  $input: UpdatePersonalEventsInput!
+  $condition: ModelPersonalEventsConditionInput
+) {
+  updatePersonalEvents(input: $input, condition: $condition) {
+    id
+    name
+    location
+    startDatetime
+    endDatetime
+    tags
+    description
+    Users {
+      id
+      school_email
+      personal_email
+      d2l_calendar_token
+      createdAt
+      updatedAt
+      __typename
+    }
+    status
+    createdAt
+    updatedAt
+    personalEventsUsersId
+    __typename
+  }
+}
+
+mutation DeletePersonalEvents(
+  $input: DeletePersonalEventsInput!
+  $condition: ModelPersonalEventsConditionInput
+) {
+  deletePersonalEvents(input: $input, condition: $condition) {
+    id
+    name
+    location
+    startDatetime
+    endDatetime
+    tags
+    description
+    Users {
+      id
+      school_email
+      personal_email
+      d2l_calendar_token
+      createdAt
+      updatedAt
+      __typename
+    }
+    status
+    createdAt
+    updatedAt
+    personalEventsUsersId
+    __typename
+  }
+}
+
+mutation CreateUsers(
+  $input: CreateUsersInput!
+  $condition: ModelUsersConditionInput
+) {
+  createUsers(input: $input, condition: $condition) {
+    id
+    school_email
+    personal_email
+    d2l_calendar_token
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation UpdateUsers(
+  $input: UpdateUsersInput!
+  $condition: ModelUsersConditionInput
+) {
+  updateUsers(input: $input, condition: $condition) {
+    id
+    school_email
+    personal_email
+    d2l_calendar_token
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation DeleteUsers(
+  $input: DeleteUsersInput!
+  $condition: ModelUsersConditionInput
+) {
+  deleteUsers(input: $input, condition: $condition) {
+    id
+    school_email
+    personal_email
+    d2l_calendar_token
+    createdAt
+    updatedAt
+    __typename
+  }
+}
